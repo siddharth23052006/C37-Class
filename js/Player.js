@@ -29,6 +29,6 @@ class Player {
     var playerInfoRef = database.ref('players');
     playerInfoRef.on("value",(data)=>{
       allPlayers = data.val();
-    })
+    });
   }
 }
